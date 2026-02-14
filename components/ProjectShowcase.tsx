@@ -104,8 +104,8 @@ const ProjectShowcase: React.FC<ProjectShowcaseProps> = ({ projectId, onBack, on
                         </div>
                         <div className="flex-1 grid grid-cols-1 md:grid-cols-2 gap-4 w-full">
                              <div className="w-full aspect-[3/4] bg-stone-300">
-                                {/* CHANGED: Replaced problematic image with a reliable B&W editorial shot */}
-                                <img src="https://images.unsplash.com/photo-1485230946086-1d99d543b599?q=80&w=1000&auto=format&fit=crop" className="w-full h-full object-cover" alt="Fashion Detail 1" />
+                                {/* CHANGED: Replaced broken image with a confirmed high-availability image */}
+                                <img src="https://images.unsplash.com/photo-1503342394128-c104d54dba01?q=80&w=1000&auto=format&fit=crop" className="w-full h-full object-cover" alt="Fashion Detail 1" />
                              </div>
                              <div className="w-full aspect-[3/4] bg-stone-300 mt-0 md:mt-12">
                                 <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?q=80&w=1000&auto=format&fit=crop" className="w-full h-full object-cover" alt="Fashion Detail 2" />

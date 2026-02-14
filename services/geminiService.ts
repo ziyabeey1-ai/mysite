@@ -2,14 +2,9 @@ import { GoogleGenAI } from "@google/genai";
 
 // Initialize Gemini
 // Note: In a real production app, this key should be proxied via backend to avoid exposure.
-// The instructions strictly say to use process.env.API_KEY.
-const ai = new GoogleGenAI({ apiKey: process.env.API_KEY || '' });
+const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
 
 export const generateEmailDraft = async (userName: string, projectType: string): Promise<string> => {
-  if (!process.env.API_KEY) {
-    return "API Anahtarı eksik olduğu için taslak oluşturulamadı.";
-  }
-
   try {
     const model = "gemini-3-flash-preview";
     const prompt = `
